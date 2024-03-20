@@ -19,13 +19,13 @@ namespace WebFormsSample
       {
         Type = "I-9 Form",
         Percentage = "100%",
-        Icon = "person-success"
+        Icon = "Icon/fa-form-i9.svg"
       },
       new DashboardCardData
       {
         Type = "WOTC",
         Percentage = "0%",
-        Icon = "person-error", 
+        Icon = "Icon/fa-wotc.svg", 
       }
     };
 

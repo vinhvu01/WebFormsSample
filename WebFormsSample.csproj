@@ -2259,6 +2259,8 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Icon\fa-form-i9.svg" />
+    <Content Include="Icon\fa-wotc.svg" />
     <Content Include="package.json" />
     <Content Include="package-lock.json" />
     <Content Include="assets\icons\LICENSE" />

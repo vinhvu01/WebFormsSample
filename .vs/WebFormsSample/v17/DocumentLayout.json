@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Work\\FAElementsWebFromSample\\",
+  "WorkspaceRootPath": "D:\\Work\\WebFormsSample\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{41659513-D132-45DC-B6D3-27F7324B1825}|WebFormsSample.csproj|d:\\work\\faelementswebfromsample\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41659513-D132-45DC-B6D3-27F7324B1825}|WebFormsSample.csproj|solutionrelative:default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41659513-D132-45DC-B6D3-27F7324B1825}|WebFormsSample.csproj|D:\\Work\\WebFormsSample\\dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{41659513-D132-45DC-B6D3-27F7324B1825}|WebFormsSample.csproj|solutionrelative:dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41659513-D132-45DC-B6D3-27F7324B1825}|WebFormsSample.csproj|d:\\work\\faelementswebfromsample\\dashboard.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{41659513-D132-45DC-B6D3-27F7324B1825}|WebFormsSample.csproj|D:\\Work\\WebFormsSample\\dashboard.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41659513-D132-45DC-B6D3-27F7324B1825}|WebFormsSample.csproj|solutionrelative:dashboard.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41659513-D132-45DC-B6D3-27F7324B1825}|WebFormsSample.csproj|d:\\work\\faelementswebfromsample\\dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{41659513-D132-45DC-B6D3-27F7324B1825}|WebFormsSample.csproj|solutionrelative:dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{41659513-D132-45DC-B6D3-27F7324B1825}|WebFormsSample.csproj|d:\\work\\webformssample\\icon\\fa-form-i9.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{41659513-D132-45DC-B6D3-27F7324B1825}|WebFormsSample.csproj|solutionrelative:icon\\fa-form-i9.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 45,
+          "SelectedChildIndex": 46,
           "Children": [
             {
               "$type": "Bookmark",
@@ -206,24 +206,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Default.aspx.cs",
-              "DocumentMoniker": "D:\\Work\\FAElementsWebFromSample\\Default.aspx.cs",
-              "RelativeDocumentMoniker": "Default.aspx.cs",
-              "ToolTip": "D:\\Work\\FAElementsWebFromSample\\Default.aspx.cs",
-              "RelativeToolTip": "Default.aspx.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAmwCwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T13:59:20.151Z",
+              "DocumentIndex": 2,
+              "Title": "fa-form-i9.svg",
+              "DocumentMoniker": "D:\\Work\\WebFormsSample\\Icon\\fa-form-i9.svg",
+              "RelativeDocumentMoniker": "Icon\\fa-form-i9.svg",
+              "ToolTip": "D:\\Work\\WebFormsSample\\Icon\\fa-form-i9.svg",
+              "RelativeToolTip": "Icon\\fa-form-i9.svg",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAeAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKTSURBVDhPjVNLSFRRGP7unTsz9w75uOaMZlMNpo1aFFJRodRGN7UwatMiKgga3JgVRBSNSA8RooUFLRycCCpc9ITIFi0EW\u002BhCW/gONYUcxplsQL13nKv3dM6ZGV\u002BE9N37c\u002B455/\u002B\u002B/7s/5whYA7/fP5L63BSCIDxvbGxsAiEktZQEE6Brm6K1tXWS5TU0NNQyjsiZKQgCBgBChQ2Q\u002BfswpytgDLmg9zihD9XBNJfhcrlstPoeqlVPRS6uCBDy1broLnN29PkxPeaFFmpC79gOdEu9sB8KQRt\u002Bz/NUVbUGAoGpJIfc5j2gZIuv3fam/sCNGrdjGLGwE23hR\u002BiMeBCKAbXlOTgfr0VW9QfqD4iEZ5BIJNAWDI5yB75X0tXqwrc1JZk90MKVUEq/4UplFc4W5UKwiHjaO4tx90NWiYfT5cQuj4dRITLrZfn9104XtOD3\u002BE4z7/BrqIoKZ4YM37E8XNifA4vdiuCIApPzWY9Wmy9h6UfOpd13t89FstEceyF2PJlAfNHkm6y6xSbxcTASpyuMyFT4NoeI6PV6mzEvvIy0oO\u002BXPVGULaMs186jVLVil0zzF\u002BI4ki\u002BnqjP\u002BGgemrp0Z\u002BHn8T0d0nyrOTky\u002B8x0tNoxE0iZrcSqXz5lAcroCcXkeBcGpyzcnowRTDk9xoDuEmbkE5vRlfB6cRcWzIXibv\u002BNTf5ST0y7SEBa6MGIaOFje2VUnZSgPTFECMZM9YCeLde6cdwvuVLlXrVMFWXGAHqRRaUlDezyEic6tlbFBbW/oS8nHbf0RDZIooDDLipPeTJwozIJJH4EIoG/y1/6Fe/5bj6lFousa0WjoWjoWiLYhGNidWHcXDNhOsVGWFSg0ZCUdDigbIo11Zv73Oq8C\u002BAsr5V2IWWNA0gAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-03-20T18:35:27.441Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Dashboard.aspx",
-              "DocumentMoniker": "D:\\Work\\FAElementsWebFromSample\\Dashboard.aspx",
+              "DocumentMoniker": "D:\\Work\\WebFormsSample\\Dashboard.aspx",
               "RelativeDocumentMoniker": "Dashboard.aspx",
-              "ToolTip": "D:\\Work\\FAElementsWebFromSample\\Dashboard.aspx",
+              "ToolTip": "D:\\Work\\WebFormsSample\\Dashboard.aspx",
               "RelativeToolTip": "Dashboard.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
@@ -234,11 +234,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Dashboard.aspx.cs",
-              "DocumentMoniker": "D:\\Work\\FAElementsWebFromSample\\Dashboard.aspx.cs",
+              "DocumentMoniker": "D:\\Work\\WebFormsSample\\Dashboard.aspx.cs",
               "RelativeDocumentMoniker": "Dashboard.aspx.cs",
-              "ToolTip": "D:\\Work\\FAElementsWebFromSample\\Dashboard.aspx.cs",
+              "ToolTip": "D:\\Work\\WebFormsSample\\Dashboard.aspx.cs",
               "RelativeToolTip": "Dashboard.aspx.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAmwBsAAAAQAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAzwBUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-20T13:51:30.91Z",
               "EditorCaption": ""
