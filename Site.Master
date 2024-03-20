@@ -1,0 +1,158 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebFormsSample.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <style>
+        :not(:defined) {
+            visibility: hidden;
+        }
+    </style>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.4.15/i18next.min.js"
+        integrity="sha512-fDt50cr//jIKim9lb8ly/E4obyrGx7hIK0irvSAg0X7awULsliT1Q8GYVqkfeovyWX3arQoLn6MOmjNKqD8MZA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/7.0.1/i18nextBrowserLanguageDetector.min.js"
+        integrity="sha512-Ih6s+CnuvIm8c0ve1oyco5GwQHRTKK7rvDdg8Vr99RWtE+llPXU9ieKm9J8NimyUAJoGrnV0k88fG0uUsCQh2w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/1.4.0/i18nextHttpBackend.min.js"
+        integrity="sha512-fFPzS/+7kVGESNkOvhrmqW7zIkattKTefgl2wgE+VWz1mAiVw4ji7+m1AYbH1w3Vvuls7Lkdm72LQy3ms9YtIw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+
+    <script>
+        i18next
+            .use(i18nextBrowserLanguageDetector)
+            .use(i18nextHttpBackend)
+            .init({
+                supportedLngs: ['en'],
+                fallbackLng: 'en',
+                debug: true,
+                returnEmptyString: false,
+                ns: ['components'],
+                backend: {
+                    loadPath: '/assets/locales/{{lng}}/{{ns}}.json',
+                },
+                detection: {
+                    order: ['querystring', 'cookie'],
+                    lookupCookie: 'lang',
+                    lookupQuerystring: 'lng',
+                    caches: ['localStorage', 'cookie'],
+                    cookieMinutes: 1440,
+                },
+            })
+            .then(() => {
+                import('/Scripts/charting.js').then(() => {
+                    const { FadvIconLibraryService } = window.elements;
+                    new FadvIconLibraryService().useMaterial();
+                })
+            });
+    </script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <%--<asp:ScriptReference Name="jquery"  />--%>
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <fadv-application mode="light">
+            <fadv-header elevated>
+                <fadv-grid>
+                    <fadv-grid-row>
+                        <fadv-grid-col col="6">
+                            <fadv-box pt="small">
+                                <img class="logo" src="/Content/img/fa-logo.svg" alt="Logo" />
+                            </fadv-box>
+                        </fadv-grid-col>
+                        <fadv-grid-col col="6" alignment="right">
+                            <fadv-box pv="medium">
+                                <fadv-button text class="fadv-mr-x-large">
+                                    <fadv-icon slot="prefix" src="/Content/icons/cart-shopping.svg"></fadv-icon>
+                                    <div class="fadv-label-medium">Cart (0)</div>
+                                </fadv-button>
+                                <fadv-dropdown hoist placement="bottom-end" class="fadv-mr-small">
+                                    <fadv-button slot="trigger" text>
+                                        <fadv-icon set="fontawesome" slot="prefix" library="solid" name="circle-question"></fadv-icon>
+                                        <div class="fadv-label-medium">Help</div>
+                                    </fadv-button>
+                                    <fadv-box p="large" class="fadv-align-left">
+                                        <fadv-typography type="label-medium">FAQ</fadv-typography>
+                                        <fadv-box mv="medium">
+                                            <fadv-typography type="paragraph-medium">Call Technical Support: 1-866-237-2135</fadv-typography>
+                                        </fadv-box>
+                                        <fadv-typography type="label-medium">Email Support:</fadv-typography>
+                                        <fadv-typography type="paragraph-medium">ContractorAdvantageCustomerCare@fadv.com</fadv-typography>
+                                    </fadv-box>
+                                </fadv-dropdown>
+                                <fadv-dropdown hoist placement="bottom-end">
+                                    <fadv-button slot="trigger" text caret>
+                                        <fadv-avatar size="x-small" name="Richard Johnson"></fadv-avatar>
+                                    </fadv-button>
+                                    <fadv-menu>
+                                        <fadv-menu-item value="logout">Logout</fadv-menu-item>
+                                        <fadv-menu-item value="contact">Contact</fadv-menu-item>
+                                        <fadv-menu-item value="emailPref">Email Preferences</fadv-menu-item>
+                                        <fadv-menu-item value="profile">Profile</fadv-menu-item>
+                                    </fadv-menu>
+                                </fadv-dropdown>
+                            </fadv-box>
+                        </fadv-grid-col>
+                    </fadv-grid-row>
+                </fadv-grid>
+                <fadv-navigation-bar>
+                    <fadv-navigation-item value="default" <%: Page.Title.Contains("Home") ? "checked" : "" %>>Home</fadv-navigation-item>
+                    <fadv-navigation-item value="contact" <%: Page.Title.Contains("Contact") ? "checked" : "" %>>Contact</fadv-navigation-item>
+                    <fadv-navigation-item value="dashboard" <%: Page.Title.Contains("Dashboard") ? "checked" : "" %>>Dashboard</fadv-navigation-item>
+                </fadv-navigation-bar>
+
+                <script>
+                    const navigation = document.querySelector('fadv-navigation-bar');
+                    navigation.addEventListener('fadv-selected', (event) => {
+                        window.location.href = '/' + event.detail;
+                    });
+                </script>
+            </fadv-header>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </fadv-application>
+    </form>
+    <asp:PlaceHolder runat="server"></asp:PlaceHolder>
+</body>
+</html>
